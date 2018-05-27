@@ -1,0 +1,17 @@
+<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+  <div class="mdl-tabs__tab-bar">
+      <a href="#teaching-panel" class="mdl-tabs__tab is-active">Teaching</a>
+      <a href="#modules-panel" class="mdl-tabs__tab">Modules</a>
+      <a href="#EU-funding-panel" class="mdl-tabs__tab">EU-funding</a>
+  </div>
+  <div class="mdl-tabs__panel is-active" id="teaching-panel">
+   {{ record.teaching}}
+  </div>
+  <div class="mdl-tabs__panel" id="modules-panel">
+    {{ record.modules}}
+  </div>
+  <div class="mdl-tabs__panel" id="EU-funding-panel">
+    {{ record.eu_funding}}
+    <img src="http://www.dmu.ac.uk/webimages/Study-images/Courses/Art-Design-and-Humanities/logos/esf.jpg">
+  </div>
+</div>

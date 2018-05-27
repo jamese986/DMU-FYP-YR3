@@ -1,0 +1,971 @@
+FYC:
+    name: FYC Homepage
+    singular_name: Foundation Year Computing
+    fields:
+        title:
+            type: text
+            class: large
+            group: content
+        slug:
+            type: slug
+            uses: title
+        headerlogo:
+            type: image
+            label: headerlogo
+            group: content
+        image:
+            type: image
+        welcome_text:
+            type: html
+            height: 150px
+        UT1-image:
+            type: image
+            group: User Testimonials (UT)
+        Usr-T1:
+            type: html
+            height: 100px
+            group: User Testimonials (UT)
+
+        UT2-image:
+            type: image
+            group: User Testimonials (UT)
+        UT2:
+            type: html
+            height: 100px
+            group: User Testimonials (UT)
+        UT3-image:
+            type: image
+            group: User Testimonials (UT)
+        UT3:
+            type: html
+            height: 100px
+            group: User Testimonials (UT)
+        UT4-image:
+            type: image
+            group: User Testimonials (UT)
+        UT4:
+            type: html
+            height: 100px
+            group: User Testimonials (UT)
+        template:
+            type: templateselect
+            filter: '*.twig'
+    singleton: true
+    taxonomy: [ groups ]
+    default_status: published
+    icon_one: "fa:terminal"
+    recordsperpage: 100
+    
+fyc_team:
+    name: FYC Meet The Team
+    singular_name: Team
+    fields:
+        title:
+            type: text
+            class: large
+            group: content
+        slug:
+            type: slug
+            uses: title
+        body:
+            type: html
+            height: 150px
+        team_image1:
+            type: image
+        team1link:
+            type: text
+            height: 50px
+            label: Link
+            placeholder: 'contenttype/slug'
+        team_image2:
+            type: image
+        team2link:
+            type: text
+            height: 50px
+            label: Link
+            placeholder: 'contenttype/slug'
+        team_image3:
+            type: image
+        team3link:
+            type: text
+            height: 50px
+            label: Link
+            placeholder: 'contenttype/slug'
+        template:
+            type: templateselect
+            filter: 'meet-the-team.twig'
+    default_status: published
+    icon_many: "fa:comment"
+    
+fyc_blog_main:
+    name: FYC Blog index
+    singular_name: Foundation Year Computing Blog
+    fields:
+        welcome_text:
+            type: html
+            height: 150px
+            group: welcome
+        title: 
+            type: text
+            class: medium
+            group: welcome
+        slug:
+            type: slug
+            uses: title
+            group: welcome
+        mainlink:
+            type: text
+            height: 50px
+            label: Link
+            placeholder: 'contenttype/slug'
+            group: welcome
+        title1: 
+            type: text
+            class: medium
+            group: boxes 1-5    
+        image1:
+            type: image
+            group: boxes 1-5
+        Imagelink1:
+            type: text
+            height: 50px
+            label: Image Link 1
+            placeholder: 'contenttype/slug'
+            group: boxes 1-5
+        box1:
+            type: html
+            height: 150px
+            group: boxes 1-5
+        box1link:
+            type: text
+            height: 50px
+            label: Box Link 1
+            placeholder: 'contenttype/slug'
+            group: boxes 1-5
+        template:
+            type: templateselect
+            filter: '*.twig'
+    singleton: true
+    taxonomy: [ groups ]
+    default_status: published
+    icon_one: "fa:terminal"
+    
+fyc_blog:
+    name: FYC Blog
+    singular_name: FYC Blog Entry
+    fields:
+        title:
+            type: text
+            class: large
+            group: content
+        slug:
+            type: slug
+            uses: title
+        cover_image:
+            type: image
+        teaser:
+            type: html
+            height: 150px
+        blog_image1:
+            type: image
+        blog_main:
+            type: html
+            height: 300px
+        blog_image2:
+            type: image
+        blog_extra:
+            type: html
+            height: 300px
+        author:
+            type: text
+            height: 50px
+        date:
+            type: date
+            default: "first day of last month"
+            variant: inline
+        template:
+            type: templateselect
+            filter: 'blog-entry.twig'
+    default_status: published
+    icon_many: "fa:comments"
+    recordsperpage: 100
+
+Application:
+    name: FYC Apply to course
+    singular_name: Application
+    fields:
+        title:
+            type: text
+            class: large
+            group: content
+        slug:
+            type: slug
+            uses: title
+        cover_image:
+            type: image
+        teaser:
+            type: html
+            height: 150px
+        blog_image1:
+            type: image
+        blog_main:
+            type: html
+            height: 300px
+        blog_image2:
+            type: image
+        blog_extra:
+            type: html
+            height: 300px
+        author:
+            type: text
+            height: 50px
+        date:
+            type: date
+            default: "first day of last month"
+            variant: inline
+        template:
+            type: templateselect
+            filter: 'application.twig'
+    default_status: published
+    icon_many: "fa:terminal"
+    
+FYCApplications:
+    name: FYC Applications
+    singular_name: FYC Application
+    fields:
+        title:
+            type: text
+            label: Name
+        email:
+            type: text
+            label: email
+        mobile:
+            type: text
+            label: Mobile Number
+        gcse1:
+            type: text
+            label: GCSE1
+        gcse1result:
+            type: text
+            label: gcse1result
+        gcse2:
+            type: text
+            label: GCSE2
+        gcse2result:
+            type: text
+            label: gcse2result
+        gcse3:
+            type: text
+            label: GCSE3
+        gcse3result:
+            type: text
+            label: gcse3result
+        gcse4: 
+            type: text
+            label: GCSE4
+        gcse4result:
+            type: text
+            label: gcse4result
+        gcse5: 
+            type: text
+            label: GCSE4
+        gcse5result:
+            type: text 
+            label: gcse 5 result
+        alevel: 
+            type: text
+            label: GCSE4
+        alevelresult:
+            type: text 
+            label: Alevel Result
+        OtherQual:
+            type: text
+            label: Other Qualifications
+        OtherQualResult:
+            type: text
+            label: Other Qualifications Results
+        sent_message:
+            type: html
+            height: 300px 
+    default_status: published
+    icon_one: "fa:terminal"
+    icon_many: "fa:terminal"
+    recordsperpage: 100
+
+contactus:
+    name: Contact Us Pages
+    singular_name: contact
+    fields:
+        title:
+            type: text
+            class: large
+            group: content
+        slug:
+            type: slug
+            uses: title
+        image:
+            type: image
+        body:
+            type: html
+            height: 300px 
+        template:
+            type: templateselect
+            filter: '*.twig'
+    default_status: published
+    recordsperpage: 100
+    
+
+
+ArtDesign:
+    name: FYAD Homepage
+    singular_name: Course Art and Design
+    fields:
+        title:
+            type: text
+            class: large
+            group: welcome
+        slug:
+            type: slug
+            uses: title
+            group: welcome
+        welcome_text:
+            type: html
+            height: 150px
+            group: welcome
+        mainlink:
+            type: text
+            height: 50px
+            label: Link
+            placeholder: 'contenttype/slug'
+            group: welcome
+        title1: 
+            type: text
+            class: medium
+            group: boxes 1-5    
+        image1:
+            type: image
+            group: boxes 1-5
+        Imagelink1:
+            type: text
+            height: 50px
+            label: Image Link 1
+            placeholder: 'contenttype/slug'
+            group: boxes 1-5
+        box1:
+            type: html
+            height: 150px
+            group: boxes 1-5
+        box1link:
+            type: text
+            height: 50px
+            label: Box Link 1
+            placeholder: 'contenttype/slug'
+            group: boxes 1-5
+        title2: 
+            type: text
+            class: medium
+            group: boxes 1-5    
+        image2:
+            type: image
+            group: boxes 1-5
+        Imagelink2:
+            type: text
+            height: 50px
+            label: Image Link 2
+            placeholder: 'contenttype/slug'
+            group: boxes 1-5
+        box2:
+            type: html
+            height: 150px
+            group: boxes 1-5
+        box2link:
+            type: text
+            height: 50px
+            label: Box Link 2
+            placeholder: 'contenttype/slug'
+            group: boxes 1-5 
+        title3: 
+            type: text
+            class: medium
+            group: boxes 1-5    
+        image3:
+            type: image
+            group: boxes 1-5
+        Imagelink3:
+            type: text
+            height: 50px
+            label: Image Link 3
+            placeholder: 'contenttype/slug'
+            group: boxes 1-5
+        box3:
+            type: html
+            height: 150px
+            group: boxes 1-5
+        box3link:
+            type: text
+            height: 50px
+            label: Box Link 3 
+            placeholder: 'contenttype/slug'
+            group: boxes 1-5
+        title4: 
+            type: text
+            class: medium
+            group: boxes 1-5    
+        image4:
+            type: image
+            group: boxes 1-5
+        Imagelink4:
+            type: text
+            height: 50px
+            label: Image Link 4
+            placeholder: 'contenttype/slug'
+            group: boxes 1-5
+        box4:
+            type: html
+            height: 150px
+            group: boxes 1-5
+        box4link:
+            type: text
+            height: 50px
+            label: Box Link 4
+            placeholder: 'contenttype/slug'
+            group: boxes 1-5
+        title5: 
+            type: text
+            class: medium
+            group: boxes 1-5    
+        image5:
+            type: image
+            group: boxes 1-5
+        Imagelink5:
+            type: text
+            height: 50px
+            label: Image Link 5
+            placeholder: 'contenttype/slug'
+            group: boxes 1-5
+        box5:
+            type: html
+            height: 150px
+            group: boxes 1-5
+        box5link:
+            type: text
+            height: 50px
+            label: Box Link 5
+            placeholder: 'contenttype/slug'
+            group: boxes 1-5 
+        title6: 
+            type: text
+            class: medium
+            group: boxes 1-5    
+        image6:
+            type: image
+            group: boxes 1-5
+        Imagelink6:
+            type: text
+            height: 50px
+            label: Image Link 6
+            placeholder: 'contenttype/slug'
+            group: boxes 1-5
+        box6:
+            type: html
+            height: 150px
+            group: boxes 1-5
+        box6link:
+            type: text
+            height: 50px
+            label: Box Link 6
+            placeholder: 'contenttype/slug'
+            group: boxes 1-5  
+        template:
+            type: templateselect
+            filter: '*.twig'
+            group: welcome
+    singleton: true
+    taxonomy: [ groups ]
+    default_status: published
+    icon_one: "fa:paint-brush"
+
+ArtDesignpages:
+    name: FYAD About Us
+    singular_name: Art & Design
+    fields:
+        title:
+            type: text
+            class: large
+            group: content
+        slug:
+            type: slug
+            uses: title
+        image:
+            type: image
+        body:
+            type: html
+            height: 300px
+        Modules:
+            type: html
+            height: 150px
+            group: tabs
+        Teaching:
+            type: html
+            height: 300px
+            group: tabs
+        EU_funding:
+            type: html
+            height: 300px
+            group: tabs
+        template:
+            type: templateselect
+            filter: '*.twig'
+    singleton: true
+    default_status: published
+    recordsperpage: 100
+    icon_one: "fa:paint-brush"
+    
+
+ArtDesignInnerPages:
+    name: FYAD Inner Page
+    singular_name: art-and-design-inner-page
+    fields:
+        title:
+            type: text
+            class: large
+            group: Larger Page
+        slug:
+            type: slug
+            uses: title
+            group: Larger Page
+        image:
+            type: image
+            group: Larger Page
+        body:
+            type: html
+            height: 300px
+            group: Larger Page
+        Tab1:
+            type: html
+            height: 150px
+            group: Larger Page
+        Tab2:
+            type: html
+            height: 300px
+            group: Larger Page
+        Tab3:
+            type: html
+            height: 300px
+            group: Larger Page
+        title:
+            type: text
+            class: large
+            group: Smaller Page
+        description:
+            type: text
+            class: medium
+            group: Smaller Page
+        slug:
+            type: slug
+            uses: title
+            group: Smaller Page
+        image:
+            type: image
+            group: Smaller Page
+        image1:
+            type: image
+            group: Smaller Page
+        box1:
+            type: html
+            height: 150px
+            group: Smaller Page
+        image2:
+            type: image
+            group: Smaller Page
+        box2:
+            type: html
+            height: 150px
+            group: Smaller Page
+        image3:
+            type: image
+            group: Smaller Page
+        box3:
+            type: html
+            height: 150px
+            group: Smaller Page
+        body:
+            type: html
+            height: 300px
+            group: Smaller Page
+        template:
+            type: templateselect
+            filter: '*.twig'
+            group: Larger Page
+    default_status: published
+    icon_one: "fa:paint-brush"
+    icon_many: "fa:paint-brush"
+
+ArtDesignBlog:
+    name: FYAD Blog index
+    singular_name: Art and Design Blog
+    fields:
+        title:
+            type: text
+            class: large
+            group: welcome
+        slug:
+            type: slug
+            uses: title
+            group: welcome
+        welcome_text:
+            type: html
+            height: 150px
+            group: welcome
+        mainlink:
+            type: text
+            height: 50px
+            label: Link
+            placeholder: 'contenttype/slug'
+            group: welcome
+        title1: 
+            type: text
+            class: medium
+            group: Blog    
+        image1:
+            type: image
+            group: Blog
+        ADBimagelink1:
+            type: text
+            height: 50px
+            label: Image Link 1 
+            placeholder: 'contenttype/slug'
+            group: Blog
+        blog1:
+            type: html
+            height: 150px
+            group: Blog
+        ADBblog1link:
+            type: text
+            height: 50px
+            label: Link
+            placeholder: 'contenttype/slug'
+            group: Blog
+        title2: 
+            type: text
+            class: medium
+            group: Blog    
+        image2:
+            type: image
+            group: Blog
+        ADBImagelink2:
+            type: text
+            height: 50px
+            label: Link
+            placeholder: 'contenttype/slug'
+            group: Blog
+        blog2:
+            type: html
+            height: 150px
+            group: Blog
+        ADBblog2link:
+            type: text
+            height: 50px
+            label: Link
+            placeholder: 'contenttype/slug'
+            group: Blog 
+        title3: 
+            type: text
+            class: medium
+            group: Blog    
+        image3:
+            type: image
+            group: Blog
+        ADBImagelink3:
+            type: text
+            height: 50px
+            label: Link
+            placeholder: 'contenttype/slug'
+            group: Blog
+        blog3:
+            type: html
+            height: 150px
+            group: Blog
+        ADBblog3link:
+            type: text
+            height: 50px
+            label: Link
+            placeholder: 'contenttype/slug'
+            group: Blog
+        title4: 
+            type: text
+            class: medium
+            group: Blog    
+        image4:
+            type: image
+            group: Blog
+        ADBImagelink4:
+            type: text
+            height: 50px
+            label: Link
+            placeholder: 'contenttype/slug'
+            group: Blog
+        blog4:
+            type: html
+            height: 150px
+            group: Blog
+        ADBblog4link:
+            type: text
+            height: 50px
+            label: Link
+            placeholder: 'contenttype/slug'
+            group: Blog
+        title5: 
+            type: text
+            class: medium
+            group: Blog    
+        image5:
+            type: image
+            group: Blog
+        ADBImagelink5:
+            type: text
+            height: 50px
+            label: Link
+            placeholder: 'contenttype/slug'
+            group: Blog
+        blog5:
+            type: html
+            height: 150px
+            group: Blog
+        ADBblog5link:
+            type: text
+            height: 50px
+            label: Link
+            placeholder: 'contenttype/slug'
+            group: Blog 
+        title6: 
+            type: text
+            class: medium
+            group: Blog    
+        image6:
+            type: image
+            group: Blog
+        ADBImagelink6:
+            type: text
+            height: 50px
+            label: Link
+            placeholder: 'contenttype/slug'
+            group: Blog
+        blog6:
+            type: html
+            height: 150px
+            group: Blog
+        ADBblog6link:
+            type: text
+            height: 50px
+            label: Link
+            placeholder: 'contenttype/slug'
+            group: Blog
+        title7: 
+            type: text
+            class: medium
+            group: Blog    
+        image7:
+            type: image
+            group: Blog
+        ADBImagelink7:
+            type: text
+            height: 50px
+            label: Link
+            placeholder: 'contenttype/slug'
+            group: Blog
+        blog7:
+            type: html
+            height: 150px
+            group: Blog
+        ADBblog7link:
+            type: text
+            height: 50px
+            label: Link
+            placeholder: 'contenttype/slug'
+            group: Blog
+        title8: 
+            type: text
+            class: medium
+            group: Blog    
+        image8:
+            type: image
+            group: Blog
+        ADBImagelink8:
+            type: text
+            height: 50px
+            label: Link
+            placeholder: 'contenttype/slug'
+            group: Blog
+        blog8:
+            type: html
+            height: 150px
+            group: Blog
+        ADBblog8link:
+            type: text
+            height: 50px
+            label: Link
+            placeholder: 'contenttype/slug'
+            group: Blog          
+        template:
+            type: templateselect
+            filter: 'blog-index.twig'
+            group: welcome
+    default_status: published
+    icon_one: "fa:paint-brush"
+    singleton: true
+
+ArtDesignBlogEntry:
+    name: FYAD Blog
+    singular_name: Art and Design Blog Entry
+    fields:
+        title:
+            type: text
+            class: large
+            group: Smaller Page
+        description:
+            type: text
+            class: medium
+            group: Smaller Page
+        slug:
+            type: slug
+            uses: title
+            group: Smaller Page
+        image:
+            type: image
+            group: Smaller Page
+        box1:
+            type: html
+            height: 150px
+            group: Smaller Page
+        image2:
+            type: image
+            group: Smaller Page
+        box2:
+            type: html
+            height: 150px
+            group: Smaller Page
+        image3:
+            type: image
+            group: Smaller Page
+        box3:
+            type: html
+            height: 150px
+            group: Smaller Page
+        body:
+            type: html
+            height: 300px
+            group: Smaller Page
+        template:
+            type: templateselect
+            filter: 'blog-entry.twig'
+            group: Smaller Page
+    default_status: published
+    icon_one: "fa:paint-brush"
+    icon_many: "fa:paint-brush"
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+Society:
+    name: Societies
+    singular_name: society
+    fields:
+        title:
+            type: text
+            class: large
+            group: content
+        slug:
+            type: slug
+            uses: title
+        image:
+            type: image
+        welcome_text:
+            type: html
+            height: 150px
+        box1:
+            type: html
+            height: 150px
+        contentlink:
+            type: text
+            height: 50px
+            label: Link
+            placeholder: 'contenttype/slug'
+        box2:
+            type: html
+            height: 150px
+        key_point_intro:
+            type: html
+            height: 150px
+        key_point1:
+            type: html
+            height: 150px
+        key_point2:
+            type: html
+            height: 150px
+        key_point3:
+            type: html
+            height: 150px
+        Subscribe:
+            type: html
+            height: 150px
+        blog_image1:
+            type: image
+        blog1:
+            type: html
+            height: 150px
+        contentlink:
+            type: text
+            height: 50px
+            label: Link
+            placeholder: 'contenttype/slug'
+        blog_image2:
+            type: image
+        blog2:
+            type: html
+            height: 150px
+        blog_image3:
+            type: image
+        blog3:
+            type: html
+            height: 150px
+        blog_image4:
+            type: image
+        blog4:
+            type: html
+            height: 150px
+        blog_image5:
+            type: image
+        blog5:
+            type: html
+            height: 150px
+        blog_image6:
+            type: image
+        blog6:
+            type: html
+            height: 150px
+        map:
+            type: html
+            height: 150px
+        sponsor1:
+            type: image
+        sponsor2:
+            type: image
+        sponsor3:
+            type: image
+        template:
+            type: templateselect
+            filter: 'index.twig'
+    default_status: published
+    icon_one: "fa:coffee"
+    icon_many: "fa:coffee"

@@ -1,0 +1,10 @@
+{{ include('partials/_header.twig') }}
+{{ include ('partials/nav.html.twig') }}
+{% block main %}
+	{% if record is defined %}
+		{{ record.jumbotron}}
+		{{ record.body }}
+		{{ record.map}}
+	{% endif %}
+{% endblock main %}
+{{ include('partials/_footer.twig') }}

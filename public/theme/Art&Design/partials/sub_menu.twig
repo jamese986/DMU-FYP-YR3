@@ -1,0 +1,7 @@
+<ul class="rmi">
+    {% for item in menu %}
+        <li class="rmi">
+            <a class="mdl-navigation__link is-active" href="{{ item.link }}">{{item.label}}</a>
+        </li>
+    {% endfor %}
+</ul>

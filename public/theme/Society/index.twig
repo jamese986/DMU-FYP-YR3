@@ -1,0 +1,163 @@
+{{ include('partials/_header.twig') }}
+{{ include('partials/_nav.twig') }}
+<!-- Welcome Banner Start -->
+<section class="block light-content">
+  <div class="welcome text-center max-50vh background-cover">
+    <div class="overlay section-overlay"></div>
+    <div class="content vertical-center text-center">
+      <div class="container">
+        <h1>Welcome To | <strong><span class="color">{{ record.title}}</span></strong></h1>
+        <p class="lead">{{ record.welcome_text }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+</header>
+<!-- Welcome Banner End -->
+ <!-- About Us Start -->       
+<div class="ab-block match-height">
+  <div class="pad-large">
+	{{ record.box1 }}
+  </div>
+</div>
+<!-- About Us Box 1 End -->
+ <div class="ab-block match-height">
+  <div class="pad-large">
+    	{{ record.box2 }}
+  </div>
+</div>
+<!-- About Us Box 2 End -->
+
+<!-- Key Points Start -->
+<div class="kpb-intro section-title text-center">
+	{{ record.key_point_intro }}
+</div>
+<div class="kpb text-center">
+   <i class="fa fa-user fa-2x"></i>
+	{{ record.key_point1 }}
+</div>
+ <div class="kpb text-center">
+    <i class="fa fa-user fa-2x"></i>
+	{{ record.key_point2}}
+</div>
+<div class="kpb text-center">
+    <i class="fa fa-gbp fa-2x"></i>
+	{{ record.key_point3}}
+</div>
+<!-- Key Points END -->
+		
+<!-- Newsletter Start -->
+<div class="subscribe text-center background-cover">
+  <div class="container section-padding">
+    <div class="text-center mb-medium">
+      <h2>Subscribe for the Weekly {{ record.title}} Newsletter </h2>
+    </div>
+    <div class="input-group">
+      <input class="form-control rounded" placeholder="Your Email Here..." type="text">
+      <span class="input-group-btn">
+      <button class="btn btn-primary btn-left btn-newsletter btn-rounded inside" type="button">Subscribe</button>
+      </span>
+    </div>
+  </div>
+</div>
+<!-- Newsletter End -->
+
+<!-- Blog Posts Start -->
+    <div class="section-overlay section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-page col-md-3">
+            <a href="blog-post.html"><img src="{{ record.blog_image1|image() }}" alt="Image" class=" img-responsive edit-self"></a>
+              <div class="post-content-wrapper text-left">
+			  	<div id="blog"><h3><a href="blog-post.html">Intro to Docker | Part 1</a></h3></div>
+				{{ record.blog1}}
+			   </div>
+		   </div>
+			 <div class="col-page  col-md-3">
+            <a href="blog-post.html"><img src="{{ record.blog_image2|image() }}" alt="Image" class=" img-responsive edit-self"></a>
+            <div class="post-content-wrapper text-left">
+              <h3><a href="blog-post.html">Intro to Docker | Part 2</a></h3>
+              {{ record.blog2}}
+            </div>
+          </div>
+          <div class="col-page  col-md-3">
+            <a href="blog-post.html"><img src="{{ record.blog_image3|image() }}" alt="Image" class=" img-responsive edit-self"></a>
+            <div class="post-content-wrapper text-left">
+              <h3><a href="blog-post.html">Intro to Docker | Part 3</a></h3>
+              {{ record.blog3}}
+            </div>
+          </div>
+          <div class="col-page  col-md-3">
+            <a href="blog-post.html"><img src="{{ record.blog_image4|image() }}" alt="Image" class=" img-responsive edit-self"></a>
+            <div class="post-content-wrapper text-left">
+              <h3><a href="blog-post.html">Intro to PHP Storm | Part 1</a></h3>
+              {{ record.blog4}}
+            </div>
+          </div>
+          <div class="col-page  col-md-3">
+            <a href="blog-post.html"><img src="{{ record.blog_image5|image() }}" alt="Image" class=" img-responsive edit-self"></a>
+            <div class="post-content-wrapper text-left">
+              <h3><a href="blog-post.html">Intro to PHP Storm | Part 2</a></h3>
+             {{ record.blog5}}
+            </div>
+          </div>
+          <div class="col-page  col-md-3">
+            <a href="blog-post.html"><img src="{{ record.blog_image6|image() }}" alt="Image" class=" img-responsive edit-self"></a>
+            <div class="post-content-wrapper text-left">
+              <h3><a href="blog-post.html">Intro to PHP Storm | Part 2</a></h3>
+              {{ record.blog6}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Blog Posts End -->
+    <!-- Google Map Start-->
+    <div class="container">
+      <div class=" map-container">
+        <section class="block section-padding">
+          <div id="map-wrapper" class="edit-map apply-handle-wrapper">
+            <h4>Find Us at | GH6.12</h4>
+            <div id="map"></div>
+            {{ record.map}}
+          </div>
+        </section>
+      </div>
+      <!-- Google Map End-->
+       <!-- Contact us form -->
+      <div class="cbox">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <div id="contact"><h2>Contact | <strong>Us</strong></h2></div>
+              <p>If your interested in attending an event or just have a general inquiry please feel free to send us a message we'd love to hear from you.</p>
+            </div>
+            <!-- Contact us form -->
+           {{ boltforms('soc') }}
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- Contact us form End -->
+    <!-- Sponsors Start -->
+    
+    <div class="section-padding">
+      <div class="container">
+        <div class="sponsor">
+          <h3 class="mb-small">Please check out our other | <strong>Sponsors</strong></h3>
+          <div class="col-md-3">
+            <a href="https://www.jetbrains.com/phpstorm/"><img src="{{ record.sponsor1|image() }}" alt="Image" class="img-responsive edit-self"></a>
+          </div>
+          <div class="col-md-3">
+            <a href="http://phpem.uk"><img src="{{ record.sponsor2|image() }}" alt="phpem logo" class="img-responsive edit-self"></a>
+          </div>
+          <div class="col-md-3">
+            <a href="https://www.docker.com"><img src="{{ record.sponsor3|image() }}" alt="docker logo" class="img-responsive edit-self"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sponsors End -->   
+ {{ include('partials/_footer.twig') }}

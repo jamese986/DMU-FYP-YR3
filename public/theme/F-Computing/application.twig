@@ -1,0 +1,40 @@
+{{ include('partials/_header.twig') }}
+{{ include('partials/_nav.twig') }}
+<section class="block">
+  <header class="intro-header light-content background-cover" style="background-image: url({{ record.cover_image|image() }};)">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 section-padding-xl">
+          <div class="post-heading">
+             <h1>{{ record.title}}</h1>
+            <span class="meta">Posted by <a href="#">{{ record.author }}</a> on {{ record.date|date("jS F, Y")}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <article>
+    <div class="container section-padding">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 single-post-content">
+           <h1><span class="color">{{ record.title}}</h1></span> 
+          {{ record.blog_main}}
+
+          <a href="#">
+          <img class="img-responsive" src="{{ record.blog_image1|image() }}" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+<div class="container section-padding" style="padding-top: 1px; padding-bottom: 80px;">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 single-post-content">
+      {{ boltforms('fyc_applications') }}
+    </div>
+  </div>
+</div>
+</article>
+</section>
+{{ include('partials/_footer.twig') }}

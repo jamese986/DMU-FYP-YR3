@@ -1,0 +1,532 @@
+/*Importing Google Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+/* Main Styles */
+
+body,
+html {
+  font-family: 'Raleway', sans-serif;
+  color: #444;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h1 strong {
+  font-weight: 900;
+}
+
+h2 {
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 0;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p.intro {
+  font-size: 16px;
+  margin: 12px 0 0;
+  line-height: 24px;
+ 
+}
+
+a {
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #e50000;
+}
+
+.section-padding {
+  padding: 80px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.max-50vh,
+.max-50vh .overlay {
+  height: 50vh;
+  min-height: 50vh;
+  max-height: 50vh;
+}
+
+.mb-medium {
+  margin-bottom: 40px;
+}
+
+.pad-large {
+  padding: 20px 50px;
+}
+
+.light-content,
+.light-content * {
+  color: #fff;
+}
+
+.vertical-center {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-sm-4 {
+  width: 33.3%;
+}
+
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid #eee;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.col-md-4 {
+  width: 33.3%;
+}
+
+
+
+.col-page {
+  display: block;
+  float: left;
+}
+
+
+/* Main Styles END */
+
+
+/*Global Navigation Bar*/
+
+nav {
+  z-index: 99999 !important;
+  position: absolute;
+  background-color: #fff;
+}
+
+nav .navWide {
+  display: none;
+  margin: 0 auto;
+}
+
+nav .navWide .wideDiv {
+  text-align: right;
+}
+
+nav .navWide .wideDiv a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0 2em;
+}
+
+nav .navNarrow i {
+  float: left;
+  cursor: pointer;
+  color: red;
+}
+
+nav .navNarrow .narrowLinks a {
+  display: block;
+  float: left;
+  clear: left;
+  padding: 5px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav .navNarrow h4 {
+  margin: 0 0 0 60px;
+  color: red;
+}
+
+
+/* Removes menu */
+
+.hidden {
+  display: none;
+}
+
+
+/*nav styles end*/
+
+
+
+
+
+/* Keypoints Styles*/
+
+.kpb-intro {
+  display: block;
+  float: left;
+  margin-left: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 90%;
+  background-color: white;
+}
+
+.kpb {
+  display: block;
+  float: left;
+  margin-left: 20px;
+  width: 30%;
+  background-color: white;
+}
+
+
+/* Keypoints Styles END */
+
+
+/*Homepage banner image - subscribe image*/
+
+.welcome {
+  background-image: url('https://source.unsplash.com/random/1920x700');
+}
+
+.subscribe {
+  display: block;
+  color: white;
+  float: right;
+  width: 100%;
+  background-image: url('https://source.unsplash.com/random/1600x200');
+}
+
+
+/*Homepage banner image - subscribe image END*/
+
+
+/* blog post iframes */
+
+#if1 {
+  width: 480px;
+  height: 199px;
+}
+
+#if2 {
+  width: 800px;
+  height: 400px;
+}
+
+
+/*Map Styles */
+
+.map-container {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+}
+
+#map-wrapper iframe {
+  width: 100%;
+}
+
+
+/*Map Styles  END*/
+
+
+/*contact us style */
+
+.cbox {
+  display: block;
+  float: left;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#soc_message{
+  display:inline;
+
+  height:  150px;
+  width: 500px;
+
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+
+/*Footer*/
+
+.sponsor {
+  display: block;
+  float: left;
+}
+
+.footer-c {
+  display: block;
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  color: #222;
+}
+
+.footer-social a {
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+
+/*Button Specific Styles*/
+
+.btn {
+  position: relative;
+  color: #fff;
+  background-color: grey;
+  border-radius: 4px;
+  border: 0;
+  padding: 12px 30px;
+  font-size: 15px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.section-title.center {
+  padding: 30px 0;
+}
+
+.section-title h2,
+.section-title.center h2 {
+  font-weight: 300;
+}
+
+.overlay+.content,
+.overlay .content {
+  z-index: 2;
+  width: 100%;
+}
+
+.color {
+  color: #c3092a;
+}
+
+
+/*Contact Us*/
+
+/*Responsive - Mobile*/
+@media only screen and (min-width: 320px) {
+    .ab-block {
+      display: block;
+      float: left;
+      width: 100%;
+      background-color: white;
+    }
+    /* Keypoints Styles*/
+
+    .kpb-intro {
+      text-align: left;
+      width: 100%;
+   
+    }
+
+    .kpb {
+      display: block;
+      float: left;
+      margin-left: 20px;
+      width: 100%;
+      background-color: white;
+    }
+
+
+    /* Keypoints Styles END */
+    .col-md-3 {
+      display: block;
+      float: left;
+      width: auto;
+      height: auto;
+    }
+
+}
+
+/*Responsive - Tablet*/
+
+@media only screen and (min-width: 768px) {
+  nav {
+    width: 97.5%
+  }
+  .md-6 {
+    width: 100%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+}
+
+
+/*Responsive Desktop Styles */
+
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 940px;
+  }
+  nav {
+    width: 99.5%
+  }
+  nav .navWide {
+    display: block;
+    width: 100%;
+  }
+  nav .navNarrow {
+    display: none;
+  }
+
+  /* About us Box Styles*/
+
+.ab-block {
+  display: block;
+  float: left;
+  width: 50%;
+  background-color: white;
+}
+
+
+/* About us Box Styles END*/
+/* Keypoints Styles*/
+
+.kpb-intro {
+  display: block;
+  float: left;
+  margin-left: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 90%;
+  background-color: white;
+}
+
+.kpb {
+  display: block;
+  float: left;
+  margin-left: 20px;
+  width: 30%;
+  background-color: white;
+}
+
+
+/* Keypoints Styles END */
+.col-md-3 {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+}
+
+
+.match-height {
+  height: 100%;
+}
+
+
+/* Responsive sizes for container*/
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

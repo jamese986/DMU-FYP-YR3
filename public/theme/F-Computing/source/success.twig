@@ -1,0 +1,47 @@
+{{ include('partials/_header.twig') }}
+{{ include('partials/_nav.twig') }}
+  <section class="block">
+    <header class="intro-header light-content background-cover" style="background-image: url({{ record.cover_image|image() }};)">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 section-padding-xl">
+            <div class="post-heading">
+              <h1>Single Post Title</h1>
+              <p class="lead mb-medium">Monotonectally strategize multimedia based leadership skills with wireless infomediaries. Efficiently orchestrate fully tested platforms via.</p>
+              <span class="meta">Posted by <a href="#">{{ record.author }}</a> on {{ record.date|date("jS F, Y")}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <article>
+      <div class="container section-padding" style="padding-top: 80px; padding-bottom: 80px;">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 single-post-content">
+            {{ record.blog_main}}
+            
+            <a href="#">
+              <img class="img-responsive" src="{{ record.blog_image1|image() }}" alt="">
+            </a>
+            <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+            {{ record.blog_extra}}
+             <img class="img-responsive" src="{{ record.blog_image2|image() }}" alt="">
+
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <div class="container section-padding" style="padding-top: 80px; padding-bottom: 80px;">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 single-post-content">
+
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+{{ include('partials/_footer.twig') }}
+

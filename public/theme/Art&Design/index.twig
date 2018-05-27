@@ -1,0 +1,153 @@
+ {{ include('partials/_header.twig') }}
+ {{ include('partials/_nav.twig') }}
+
+
+<main class="mdl-layout__content">
+<div class="mdl-grid portfolio-max-width">
+  <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--4dp">
+    <!-- <div class="mdl-card__media mdl-cell mdl-cell--4-col-tablet">
+      <img class="article-image" src=" images/example-blog01.jpg" border="0" alt="">
+    </div> -->
+    <div class="mdl-card__media mdl-cell--12-col-tablet">
+       <img class="article-image" src="http://digitalbuildingheritage.our.dmu.ac.uk/files/2015/12/IMG_4181.jpg" height="300" alt="">
+     
+    </div>
+    
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet">
+      <a href={{ (record.main_link) }}><h2 class="mdl-card__title-text">{{ record.title}}</h2></a>
+      <div class="mdl-card__supporting-text no-left-padding">
+         {{ (record.welcome_text) }}
+      </div>
+    </div>
+  </div>
+
+
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card ">
+    <div class="mdl-card__media">
+      <a href="{{ (record.imagelink1) }}"><img class="article-image" src="{{ record.image1|image() }}" border="0" alt=""></a>
+    </div>
+    <div class="mdl-card__title">
+      <a href="{{ (record.box1link) }}"><h2 class="mdl-card__title-text">{{ record.title1 }}</h2></a>
+    </div>
+    <div class="mdl-card__supporting-text">
+      {{ record.box1 }}
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ record.box1link }}">Read more</a>
+    </div>
+  </div>
+
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+    <div class="mdl-card__media">
+     <a href="{{ (record.link2) }}"><img class="article-image" src="{{ record.image2|image() }}" border="0" alt=""></a>
+    </div>
+    <div class="mdl-card__title">
+      <a href="{{ (record.box2link) }}"><h2 class="mdl-card__title-text">{{ record.title2 }}</h2></a>
+    </div>
+    <div class="mdl-card__supporting-text">
+    {{ record.box2 }}      
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ (record.box2link) }}">Read more</a>
+    </div>
+  </div>
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card ">
+    <div class="mdl-card__media">
+      <a href="{{ record.box3link }}"><img class="article-image" src="{{ record.image3|image() }}" border="0" alt=""></a>
+    </div>
+    <div class="mdl-card__title">
+      <a href="{{ (record.box3link) }}"><h2 class="mdl-card__title-text">{{ record.title3 }}</h2></a>
+    </div>
+    <div class="mdl-card__supporting-text">
+    {{ record.box3 }}      
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ (record.box3link) }}">Read more</a>
+    </div>
+  </div>
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+    <div class="mdl-card__media">
+      <a href="{{ (record.box4link) }}"><img class="article-image" src="{{ record.image4|image() }}" border="0" alt=""></a>
+    </div>
+    <div class="mdl-card__title">
+      <a href="{{ (record.box4link) }}"><h2 class="mdl-card__title-text">{{ record.title4 }}</h2></a>
+    </div>
+    <div class="mdl-card__supporting-text">
+    {{ record.box4 }}      
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ (record.box4link) }}">Read more</a>
+    </div>
+  </div>
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card mdl-cell--12-col-tablet">
+    <div class="mdl-card__media">
+      <a href="{{ (record.box5link) }}"><img class="article-image" src="{{ record.image5|image() }}" border="0" alt=""></a>
+    </div>
+    <div class="mdl-card__title">
+      <a href="{{ (record.box5link) }}"><h2 class="mdl-card__title-text">{{ record.title5 }}</h2></a>
+    </div>
+    <div class="mdl-card__supporting-text">
+    {{ record.box5 }}      
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ (record.box5link) }}">Read more</a>
+    </div>
+  </div>
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+    <div class="mdl-card__media">
+      <a href="{{ (record.box6link) }}"><img class="article-image" src="{{ record.image6|image() }}" border="0" alt=""></a>
+    </div>
+    <div class="mdl-card__title">
+      <a href="(record.box6link)"><h2 class="mdl-card__title-text">{{ record.title6 }}</h2></a>
+    </div>
+    <div class="mdl-card__supporting-text">
+    {{ record.box6 }}      
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ (record.box6link) }}">Read more</a>
+    </div>
+  </div>
+ <!--  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+    <div class="mdl-card__media">
+      <a href="{{ (record.link) }}"><img class="article-image" src="{{ record.image7|image() }}" border="0" alt=""></a>
+    </div>
+    <div class="mdl-card__title">
+      <a href=""><h2 class="mdl-card__title-text">Stand-alone article</h2></a>
+    </div>
+    <div class="mdl-card__supporting-text">
+    {{ record.box7 }}      
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ (record.link) }}">Read more</a>
+    </div>
+  </div>
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+    <div class="mdl-card__media">
+      <a href="{{ (record.link) }}"><img class="article-image" src="{{ record.image8|image() }}" border="0" alt=""></a>
+    </div>
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">MDL website</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+    {{ record.box8 }}      
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Read more</a>
+    </div>
+  </div>
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+    <div class="mdl-card__media">
+      <img class="article-image" src="{{ record.image9|image() }}" border="0" alt="">
+    </div>
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Consequat ut quis</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+    {{ record.box9 }}      
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Read more</a>
+    </div>
+  </div> -->
+</div>
+{{ include('partials/_footer.twig')}}

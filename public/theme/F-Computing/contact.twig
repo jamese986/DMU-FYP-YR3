@@ -1,0 +1,27 @@
+{{ include('partials/_header.twig') }}
+{{ include ('partials/_nav.twig') }}
+<section class="block">
+<div class="row">
+  <div class=" map-container">
+    <section class="block section-padding">
+      <div id="map-wrapper" class="edit-map apply-handle-wrapper">
+        <div id="map"></div>
+        {{ record.map}}
+      </div>
+    </section>
+  </div>
+</div>
+<div class="container">
+  <div class="row text-center">
+      <div class="col-md-8 col-md-offset-2">
+      <div class="section-title center">
+        <h2 class="mb-small">Do you want to <strong>Get In Touch?</strong></h2>
+        <p>Please use the form below to send us a message we'd love to hear from you.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+ {{ boltforms('soc') }}
+</div>
+{{ include('partials/_footer.twig') }}

@@ -1,0 +1,121 @@
+ {{ include('partials/_header.twig') }}
+ {{ include('partials/_nav.twig') }}
+<main class="mdl-layout__content">
+<div class="mdl-grid portfolio-max-width">
+  <div class="mdl-cell mdl-card mdl-cell--12-col mdl-shadow--4dp portfolio-card ">
+     <div class="mdl-card__media">
+      <a href="{{ record.adbblog1link }}"><img class="article-image" src="{{ record.image1|image() }}" border="0" alt=""></a>
+    </div>
+      <div class="mdl-card__title">
+            <a href="{{ record.adbblog1link }}"><h2 class="mdl-card__title-text">{{ record.title1 }}</h2></a>
+    </div>
+    <div class="mdl-card__supporting-text">
+      {{ record.blog1 }}
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ record.adbblog1link }}">Read more</a>
+    </div>
+  </div>
+
+  <div class="mdl-cell mdl-card mdl-cell--8-col mdl-shadow--4dp portfolio-card">
+    <div class="mdl-card__media">
+      <a href="{{ record.adbblog2link }}"><img class="article-image" src="{{ record.image2|image() }}" border="0" alt=""></a>
+    </div>
+    <div class="mdl-card__title">
+      <a href="{{ record.adbblog2link }}"><h2 class="mdl-card__title-text">{{ record.title1 }}</h2></a>
+    </div>
+    <div class="mdl-card__supporting-text">
+    {{ record.blog2 }}      
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ record.adbblog2link }}">Read more</a>
+    </div>
+  </div>
+
+  <div class="mdl-cell  mdl-card mdl-cell--4-col mdl-shadow--4dp portfolio-card ">
+    <div class="mdl-card__media">
+      <a href="{{ record.adbblog3link }}"><img class="article-image" src="{{ record.image3|image() }}" border="0" alt=""></a>
+    </div>
+    <div class="mdl-card__title">
+  <a href="{{ record.adbblog3link }}"><h2 class="mdl-card__title-text">{{ record.title3 }}</h2></a>}</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+    {{ record.blog3 }}      
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ record.adbblog3link }}">Read more</a>
+    </div>
+  </div>
+
+  <div class="mdl-cell mdl-card mdl-cell--8-col mdl-shadow--4dp portfolio-card">
+    <div class="mdl-card__media">
+      <a href="{{ record.adbblog4link }}"><img class="article-image" src="{{ record.image4|image() }}" border="0" alt=""></a>
+    </div>
+    <div class="mdl-card__title">
+        <a href="{{ record.adbblog4link }}"><h2 class="mdl-card__title-text">{{ record.title4 }}</h2></a>
+    </div>
+    <div class="mdl-card__supporting-text">
+    {{ record.blog4 }}      
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ record.adbblog4link }}">Read more</a>
+    </div>
+  </div>
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card mdl-cell--12-col-tablet">
+    <div class="mdl-card__media">
+      <a href="{{ record.adbblog5link }}"><img class="article-image" src="{{ record.image5|image() }}" border="0" alt=""></a>
+    </div>
+    <div class="mdl-card__title">
+        <a href="{{ record.adbblog5link }}"><h2 class="mdl-card__title-text">{{ record.title5 }}</h2></a>
+    </div>
+    <div class="mdl-card__supporting-text">
+    {{ record.blog5 }}      
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ record.adbblog5link }}">Read more</a>
+    </div>
+  </div>
+  <div class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--6dp portfolio-card">
+    <div class="mdl-card__media">
+      <a href="{{ record.adbblog6link }}"><img class="article-image" src="{{ record.image6|image() }}" border="0" alt=""></a>
+    </div>
+    <div class="mdl-card__title">
+        <a href="{{ record.adbblog6link }}"><h2 class="mdl-card__title-text">{{ record.title6 }}</h2></a>
+    </div>
+    <div class="mdl-card__supporting-text">
+    {{ record.blog6 }}      
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ record.adbblog6link }}">Read more</a>
+    </div>
+  </div>
+  <div class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--4dp portfolio-card">
+    <div class="mdl-card__media">
+      <a href="{{ record.adbblog7link }}"><img class="article-image" src="{{ record.image7|image() }}" border="0" alt=""></a>
+    </div>
+    <div class="mdl-card__title">
+        <a href="{{ record.adbblog7link }}"><h2 class="mdl-card__title-text">{{ record.title7 }}</h2></a>
+    </div>
+    <div class="mdl-card__supporting-text">
+    {{ record.blog7 }}      
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ record.adbblog7link }}">Read more</a>
+    </div>
+  </div>
+  <div class="mdl-cell mdl-card mdl-cell--12-col mdl-shadow--4dp portfolio-card">
+    <div class="mdl-card__media">
+      <a href="{{ record.adbbloglink }}"><img class="article-image" src="{{ record.image8|image() }}" border="0" alt=""></a>
+    </div>
+    <div class="mdl-card__title">
+        <a href="{{ record.adbblog8link }}"><h2 class="mdl-card__title-text">{{ record.title8 }}</h2></a>
+    </div>
+    <div class="mdl-card__supporting-text">
+    {{ record.blog8 }}      
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ record.adbblog8link }}">Read more</a>
+    </div>
+  </div>
+</div>
+{{ include('partials/_footer.twig')}}

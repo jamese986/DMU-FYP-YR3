@@ -1,0 +1,35 @@
+fyc:
+  - label: Home
+    path: /foundation-year-computing/welcome
+  - label: Meet the Team
+    path: /team/foundation-year-computing
+  - label: Blog
+    path:  /foundation-year-computing-blog/main-blog
+  - label: Apply
+    path:  /application/apply-for-the-foundation-year-computing
+  - label: DMU Tech
+    link: http://www.dmu.ac.uk/study/technology/technology.aspx
+  - label: Contact Us
+    path:  /contact/foundation-year-computing
+    
+artmain:
+  - label: Home
+    path: course-art-and-design/welcome
+  - label: Blog
+    path: art-and-design-blog/main
+  - label: About Us
+    path: art-design/about-us
+  - label: Contact Us
+    path: contact/art-and-design
+
+society:
+  - label: Home
+    path: society/dmu-php-soc
+  - label: Blog
+    link: http://46.101.31.39/society/dmu-php-soc#blog
+  - label: All Societies
+    link: https://www.demontfortsu.com/activities/societies/browse-societies/
+  - label: DMU Tech
+    link: http://www.dmu.ac.uk/study/technology/technology.aspx
+  - label: Contact Us
+    path: http://46.101.31.39/society/dmu-php-soc#contact
